@@ -70,7 +70,7 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>Nvidia, <sup>2</sup>University of Texas at Austin</span>
+                    <span class="author-block"><sup>1</sup>NVIDIA, <sup>2</sup>University of Texas at Austin</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -125,7 +125,7 @@
         <source src="static/videos/demo_coffee_dynamic.mp4"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle">
         We compare OneDP with Diffusion Policy. On the left, Diffusion Policy struggles to adapt to environment changes (here, object perturbation) and fails to complete the task due to its slow inference speed. In contrast, OneDP shows quick and effective response, and succeeds in the task.
       </h2>
     </div>
@@ -163,7 +163,7 @@
         <h2 class="title is-3">OneDP Distillation Pipeline</h2>
         <!-- Your image here -->
         <img src="static/images/pipeline.png" alt="MY ALT TEXT"/>
-        <p class="subtitle has-text-centered">a) Our one-step action generator processes image-based visual observations alongside a random noise input to deliver single-step action predictions. b) We implement KL-based distillation across the entire forward diffusion chain. Direct computation of the KL divergence is often impractical; however, we can effectively utilize the gradient of the KL, formulated into a score-difference loss. The pre-trained score network remains fixed while the action generator and the generator score network are trained.</p>
+        <p class="subtitle">(a) Our one-step action generator processes image-based visual observations alongside a random noise input to deliver single-step action predictions. (b) We implement KL-based distillation across the entire forward diffusion chain. Direct computation of the KL divergence is often impractical; however, we can effectively utilize the gradient of the KL, formulated into a score-difference loss. The pre-trained score network remains fixed while the action generator and the generator score network are trained.</p>
       </div>
 </div>
 </div>
