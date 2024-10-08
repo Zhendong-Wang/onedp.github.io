@@ -126,7 +126,7 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        We compare OneDP with Diffusion Policy. One the left, Diffusion Policy struggles to adapt to environment changes (here, object perturbation) and fails to complete the task due to its slow inference speed. In contrast, OneDP shows quick and effective response, and succeed in the task.
+        We compare OneDP with Diffusion Policy. On the left, Diffusion Policy struggles to adapt to environment changes (here, object perturbation) and fails to complete the task due to its slow inference speed. In contrast, OneDP shows quick and effective response, and succeeds in the task.
       </h2>
     </div>
   </div>
@@ -145,7 +145,7 @@
           </p>
           <img src="static/images/teaser_bar_plot.png" alt="MY ALT TEXT"/>
           <p class="subtitle has-text-centered">
-            Quantitative comparison between OneDP and Diffusion Policy (DP) in speed, success rate, compeletion time and training cost. 
+            Quantitative comparison between OneDP and Diffusion Policy in Frequency, Success Rate, Compeletion Time and Training Cost. 
           </p>
         </div>
       </div>
@@ -163,6 +163,7 @@
         <h2 class="title is-3">OneDP Distillation Pipeline</h2>
         <!-- Your image here -->
         <img src="static/images/pipeline.png" alt="MY ALT TEXT"/>
+        <p class="subtitle has-text-centered">a) Our one-step action generator processes image-based visual observations alongside a random noise input to deliver single-step action predictions. b) We implement KL-based distillation across the entire forward diffusion chain. Direct computation of the KL divergence is often impractical; however, we can effectively utilize the gradient of the KL, formulated into a score-difference loss. The pre-trained score network remains fixed while the action generator and the generator score network are trained.</p>
       </div>
 </div>
 </div>
