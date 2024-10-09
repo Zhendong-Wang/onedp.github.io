@@ -56,12 +56,12 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block"><a href="https://zhendong-wang.github.io/" target="_blank">Zhendong Wang</a><sup>1,2</sup>,</span>
-              <span class="author-block"><a href="https://mli0603.github.io/" target="_blank">Max Li</a><sup>1</sup>,</span>
+              <span class="author-block"><a href="https://mli0603.github.io/" target="_blank">Zhaoshuo Li</a><sup>1</sup>,</span>
               <span class="author-block"><a href="https://ai.stanford.edu/~amandlek/" target="_blank">Ajay Mandlekar</a><sup>1</sup>,</span>
               <span class="author-block"><a href="https://www.zhenjiaxu.com/" target="_blank">Zhenjia Xu</a><sup>1</sup>,</span>
               <span class="author-block"><a href="https://sbyebss.github.io/" target="_blank">Jiaojiao Fan</a><sup>1</sup>,</span>
               <span class="author-block"><a href="https://research.nvidia.com/person/yashraj-narang" target="_blank">Yashraj Narang</a><sup>1</sup>,</span>
-              <span class="author-block"><a href="https://jimfan.me/" target="_blank">Jim Fan</a><sup>1</sup>,</span>
+              <span class="author-block"><a href="https://jimfan.me/" target="_blank">Linxi Fan</a><sup>1</sup>,</span>
               <span class="author-block"><a href="https://yukezhu.me/" target="_blank">Yuke Zhu</a><sup>1,2</sup>,</span>
               <span class="author-block"><a href="https://yogeshbalaji.github.io/" target="_blank">Yogesh Balaji</a><sup>1</sup>,</span>
               <span class="author-block"><a href="https://mingyuanzhou.github.io/" target="_blank">Mingyuan Zhou</a><sup>2</sup>,</span>
@@ -197,23 +197,65 @@
         <h2 class="title is-3">Real-World Experiments</h2>
         <!-- Your image here -->
         <img src="static/images/realworld_tasks.png" alt="MY ALT TEXT"/>
+        <p class="subtitle">Real-World Experiment Illustration. In the first row, we display the setup for the pick-and-place experiments, featuring three tasks: 'pnp-milk', 'pnp-anything', and 'pnp-milk-move'. In total, 'pnp-anything' handles around 10 random objects. The second row illustrates the procedure for the more challenging 'coffee' task, where the Franka arm is tasked with locating the coffee cup, precisely positioning it in the machine's cup holder, inserting it, and finally closing the machine's lid.</p>
       </div>
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
         <source src="static/videos/demo_milk.mp4"
         type="video/mp4">
       </video>
+      <p class="subtitle">Video demo for pick-and-place milk.</p>
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
         <source src="static/videos/demo_coffee.mp4"
         type="video/mp4">
       </video>
+      <p class="subtitle">Video demo for operating the coffee machine.</p>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/realworld_results.png" alt="MY ALT TEXT"/>
-        <p class="subtitle has-text-centered">
-          Success Rate Comparison on Real-World Experiments.
-        </p>
+        <table border="1" cellspacing="0" cellpadding="5">
+          <tr>
+            <th>Method</th>
+            <th>Epochs</th>
+            <th>NFE</th>
+            <th>pnp-milk</th>
+            <th>pnp-anything</th>
+            <th>pnp-milk-move</th>
+            <th>coffee</th>
+            <th>Avg</th>
+          </tr>
+          <tr>
+            <td>DP(DDIM)</td>
+            <td>1000</td>
+            <td>10</td>
+            <td>1.00</td>
+            <td>0.95</td>
+            <td>0.80</td>
+            <td>0.80</td>
+            <td>0.83</td>
+          </tr>
+          <tr>
+            <td>OneDP-D</td>
+            <td>100</td>
+            <td>1</td>
+            <td>1.00</td>
+            <td>1.00</td>
+            <td>1.00</td>
+            <td>0.80</td>
+            <td>0.95</td>
+          </tr>
+          <tr>
+            <td>OneDP-S</td>
+            <td>100</td>
+            <td>1</td>
+            <td>1.00</td>
+            <td>1.00</td>
+            <td>1.00</td>
+            <td>0.90</td>
+            <td>0.98</td>
+          </tr>
+        </table>
+        <p style="text-align: center;">Success Rate Comparison on Real-World Experiments.</p>        
       </div>
 </div>
 </div>
