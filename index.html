@@ -193,7 +193,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div class="column has-text-centered">
+      <div class="column">
         <h2 class="title is-3">Real-World Experiments</h2>
         <!-- Your image here -->
         <img src="static/images/realworld_tasks.png" alt="MY ALT TEXT"/>
@@ -204,16 +204,16 @@
         <source src="static/videos/demo_milk.mp4"
         type="video/mp4">
       </video>
-      <p class="subtitle">Video demo for pick-and-place milk.</p>
+      <p class="subtitle has-text-centered">Video demo for pick-and-place milk.</p>
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
         <source src="static/videos/demo_coffee.mp4"
         type="video/mp4">
       </video>
-      <p class="subtitle">Video demo for operating the coffee machine.</p>
+      <p class="subtitle has-text-centered">Video demo for operating the coffee machine.</p>
       <div class="item">
         <!-- Your image here -->
-        <table border="1" cellspacing="0" cellpadding="5">
+        <table border="1" cellspacing="0" cellpadding="5" style="width: 80%;">
           <tr>
             <th>Method</th>
             <th>Epochs</th>
@@ -228,7 +228,7 @@
             <td>DP(DDIM)</td>
             <td>1000</td>
             <td>10</td>
-            <td>1.00</td>
+            <td><b>1.00</b></td>
             <td>0.95</td>
             <td>0.80</td>
             <td>0.80</td>
@@ -238,9 +238,9 @@
             <td>OneDP-D</td>
             <td>100</td>
             <td>1</td>
-            <td>1.00</td>
-            <td>1.00</td>
-            <td>1.00</td>
+            <td><b>1.00</b></td>
+            <td><b>1.00</b></td>
+            <td><b>1.00</b></td>
             <td>0.80</td>
             <td>0.95</td>
           </tr>
@@ -248,11 +248,11 @@
             <td>OneDP-S</td>
             <td>100</td>
             <td>1</td>
-            <td>1.00</td>
-            <td>1.00</td>
-            <td>1.00</td>
-            <td>0.90</td>
-            <td>0.98</td>
+            <td><b>1.00</b></td>
+            <td><b>1.00</b></td>
+            <td><b>1.00</b></td>
+            <td><b>0.90</b></td>
+            <td><b>0.98</b></td>
           </tr>
         </table>
         <p style="text-align: center;">Success Rate Comparison on Real-World Experiments.</p>        
